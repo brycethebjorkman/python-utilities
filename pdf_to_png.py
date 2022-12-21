@@ -1,5 +1,5 @@
 import argparse
-import fitz
+import fitz #package PyMuPDF on [PyPi](https://pypi.org/project/PyMuPDF/)
 
 def init_argparse() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
