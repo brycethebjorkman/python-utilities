@@ -1,8 +1,8 @@
-import argparse
+from argparse import ArgumentParser
 import fitz #package PyMuPDF on [PyPi](https://pypi.org/project/PyMuPDF/)
 
-def init_argparse() -> argparse.ArgumentParser:
-    parser = argparse.ArgumentParser(
+def init_argparse() -> ArgumentParser:
+    parser = ArgumentParser(
         usage="%(prg)s [OPTION] [FILE]...",
         description="Rotate the pages of a PDF file"
     )
