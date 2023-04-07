@@ -17,7 +17,8 @@ def init_argparse() -> ArgumentParser:
 def rotate_pdf_pages(file, rotation):
     doc = fitz.open(file)
     for page in doc:
-        page.set_rotation(rotation)
+        original_rotation = page.rotation
+        page.set_rotation(original_rotation + rotation)
     doc.saveIncr()
 
 def main() -> None:
